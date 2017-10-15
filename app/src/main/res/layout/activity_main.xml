@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.alex.interactiveresume.CustomRoot xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4dec2"
+    android:clipChildren="false"
+    tools:context="com.example.alex.interactiveresume.MainActivity">
+
+    <ImageView
+        android:id="@+id/headshot"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/headshot"
+        android:translationX="280dp" />
+
+    <ImageView
+        android:id="@+id/headshot2"
+        android:layout_width="250dp"
+        android:layout_height="500dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/headshot" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:rotation="25"
+        android:translationX="210dp">
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="1000dp"
+            android:background="@drawable/shadow" />
+
+        <View
+            android:layout_width="1000dp"
+            android:layout_height="1000dp"
+            android:background="#f8f4d7" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/middle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:rotation="125"
+        android:translationX="-90dp"
+        android:translationY="350dp">
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="1000dp"
+            android:background="@drawable/shadow" />
+
+        <View
+            android:layout_width="1000dp"
+            android:layout_height="1000dp"
+            android:background="#e98977" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        android:rotation="25"
+        android:translationX="250dp">
+
+        <View
+            android:layout_width="6dp"
+            android:layout_height="2000dp"
+            android:background="@drawable/shadow" />
+
+        <View
+            android:layout_width="1000dp"
+            android:layout_height="2000dp"
+            android:background="#f4dec2" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/name_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:translationX="50dp"
+        android:translationY="60dp">
+
+        <TextView
+            android:id="@+id/name_background"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:text="ALEX COSTA"
+            android:textColor="#e98977"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:translationX="-5.5dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha="1"
+            android:text="ALEX COSTA"
+            android:textColor="#febd92"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/an"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/name_container"
+        android:layout_below="@id/name_container"
+        android:text="A N"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:translationX="47dp"
+        android:translationY="55dp" />
+
+    <TextView
+        android:id="@+id/interactive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/name_container"
+        android:layout_below="@id/name_container"
+        android:text="I N T E R A C T I V E"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:translationX="47dp"
+        android:translationY="67dp" />
+
+    <TextView
+        android:id="@+id/resume"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/name_container"
+        android:layout_below="@id/name_container"
+        android:text="R E S U M E"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:translationX="47dp"
+        android:translationY="79dp" />
+
+    <View
+        android:id="@+id/more_indicator"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/indicator"
+        android:scaleX="0"
+        android:scaleY="0" />
+
+    <ImageView
+        android:id="@+id/more_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="8dp"
+        android:src="@drawable/more_arrow" />
+
+    <View
+        android:id="@+id/bar_shadow"
+        android:layout_width="wrap_content"
+        android:layout_height="6dp"
+        android:background="@drawable/shadow_vertical" />
+
+
+    <RelativeLayout
+        android:id="@+id/tile_root"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:padding="16dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="28dp">
+
+        <RelativeLayout
+            android:id="@+id/extra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:id="@+id/extra_tile"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignEnd="@+id/extra_primary"
+                android:background="#e98977"
+                android:clipChildren="false"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_championship" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#50000000" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/extra_primary2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/extra_tile"
+                android:layout_marginBottom="12dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="curriculars"
+                android:textAllCaps="true"
+                android:textColor="#be7061"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:translationX="-10dp"
+                android:transitionName="extra_secondary_text"/>
+
+            <TextView
+                android:id="@+id/extra_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/extra_tile"
+                android:layout_marginBottom="12dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="curriculars"
+                android:textAllCaps="true"
+                android:textColor="#febd92"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:translationX="-7.5dp"
+                android:transitionName="extra_primary_text"/>
+
+            <TextView
+                android:id="@+id/extra_secondary2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/extra_primary"
+                android:layout_marginBottom="-7dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="Extra"
+                android:textAllCaps="true"
+                android:textColor="#be7061"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:translationX="-18dp"
+                android:transitionName="extra_quaternary_text"/>
+
+            <TextView
+                android:id="@+id/extra_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/extra_primary"
+                android:layout_marginBottom="-7dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="Extra"
+                android:textAllCaps="true"
+                android:textColor="#febd92"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:translationX="-15.5dp"
+                android:transitionName="extra_tertiary_text"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/award"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/extra"
+            android:layout_marginTop="28dp"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:id="@+id/award_tile"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_alignStart="@+id/award_primary"
+                android:background="#e98977"
+                android:clipChildren="false"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_certificate" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#50000000" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/award_primary2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/award_tile"
+                android:layout_marginBottom="12dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="Achievements"
+                android:textAllCaps="true"
+                android:textColor="#be7061"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="award_secondary_text"
+                android:translationX="4dp" />
+
+            <TextView
+                android:id="@+id/award_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/award_tile"
+                android:layout_marginBottom="12dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="Achievements"
+                android:textAllCaps="true"
+                android:textColor="#febd92"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="award_primary_text"
+                android:translationX="6.5dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/award"
+            android:layout_alignTop="@id/extra"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:id="@+id/job_tile"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="#e98977"
+                android:clipChildren="false"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_handshake" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#50000000" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/job_primary2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/job_tile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="Employment"
+                android:textAllCaps="true"
+                android:textColor="#be7061"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="job_secondary_text"
+                android:translationX="16dp" />
+
+            <TextView
+                android:id="@+id/job_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/job_tile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="Employment"
+                android:textAllCaps="true"
+                android:textColor="#febd92"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="job_primary_text"
+                android:translationX="18.5dp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/academia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/extra"
+            android:layout_alignTop="@id/award"
+            android:layout_marginStart="8dp"
+            android:clipChildren="false">
+
+            <RelativeLayout
+                android:id="@+id/academia_tile"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:background="#e98977"
+                android:clipChildren="false"
+                android:elevation="5dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/ic_graduation" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#50000000" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/academia_primary2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/academia_tile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="Academia"
+                android:textAllCaps="true"
+                android:textColor="#be7061"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="academia_secondary_text"
+                android:translationX="-33dp" />
+
+            <TextView
+                android:id="@+id/academia_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/academia_tile"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="12dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="Academia"
+                android:textAllCaps="true"
+                android:textColor="#febd92"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="academia_primary_text"
+                android:translationX="-30.5dp" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</com.example.alex.interactiveresume.CustomRoot>

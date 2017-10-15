@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/middle">
+
+    <RelativeLayout
+        android:id="@+id/job_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/top"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/job_secondary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Employment"
+            android:textAllCaps="true"
+            android:textColor="#be7061"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="job_secondary_text" />
+
+        <TextView
+            android:id="@+id/job_primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Employment"
+            android:textAllCaps="true"
+            android:textColor="#febd92"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="job_primary_text"
+            android:translationX="2.5dp" />
+
+        <ImageView
+            android:id="@+id/job_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/job_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_below="@id/job_toolbar"
+        android:background="@color/top"
+        android:elevation="4dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp">
+
+            <ImageView
+                android:id="@+id/fsbr_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/ic_handshake" />
+
+            <TextView
+                android:id="@+id/fsbr_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_toEndOf="@id/fsbr_icon"
+                android:paddingTop="20dp"
+                android:text="Five Seasons Brewery and Restaurant"
+                android:textColor="#EE505050"
+                android:textSize="14sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/fsbr_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@id/fsbr_primary"
+                android:layout_below="@id/fsbr_primary"
+                android:layout_marginEnd="8dp"
+                android:text="Title: Dishwasher/Prep Chef\nResponsibilities:\n    • Dishwashing\n    • Preparing foods before or after they were cooked\n      (e.g. chopping vegetables, cutting/grinding meat,\n      washing and preparing foods, storing foods)\n    • Preparing appetizers and desserts on the line\nExperience:\n      My time working at Five Seasons over the summer after junior year was extremely enriching. blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah "
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="#c5ae91"/>
+    </LinearLayout>
+</RelativeLayout>

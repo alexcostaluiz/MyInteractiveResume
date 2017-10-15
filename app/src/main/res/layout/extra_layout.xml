@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/middle">
+
+    <RelativeLayout
+        android:id="@+id/extra_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/top"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <TextView
+                android:id="@+id/extra_quaternary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extra"
+                android:textAllCaps="true"
+                android:textColor="#be7061"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="extra_quaternary_text" />
+
+            <TextView
+                android:id="@+id/extra_tertiary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extra"
+                android:textAllCaps="true"
+                android:textColor="#febd92"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="extra_tertiary_text"
+                android:translationX="2.5dp" />
+
+            <TextView
+                android:id="@+id/extra_secondary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/extra_quaternary_text"
+                android:text="Curriculars"
+                android:textAllCaps="true"
+                android:textColor="#be7061"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="extra_secondary_text"
+                android:translationX="-1dp"/>
+
+            <TextView
+                android:id="@+id/extra_primary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toEndOf="@id/extra_tertiary_text"
+                android:text="Curriculars"
+                android:textAllCaps="true"
+                android:textColor="#febd92"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:transitionName="extra_primary_text"
+                android:translationX="1.5dp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/extra_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+</RelativeLayout>

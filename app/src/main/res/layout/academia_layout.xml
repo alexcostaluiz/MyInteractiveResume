@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/middle">
+
+    <RelativeLayout
+        android:id="@+id/academia_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/top"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/academia_secondary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Academia"
+            android:textAllCaps="true"
+            android:textColor="#be7061"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="academia_secondary_text" />
+
+        <TextView
+            android:id="@+id/academia_primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Academia"
+            android:textAllCaps="true"
+            android:textColor="#febd92"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="academia_primary_text"
+            android:translationX="2.5dp" />
+
+        <ImageView
+            android:id="@+id/academia_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/top</item>
+        <item name="colorPrimaryDark">@color/bottom</item>
+        <item name="colorAccent">@color/middle</item>
+        <item name="android:statusBarColor">@color/middle</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:colorEdgeEffect">#424242</item>
+        <item name="android:windowBackground">@color/middle</item>
+    </style>
+
+    <style name="AppTheme.BrandedLaunch" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/logo</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+</resources>

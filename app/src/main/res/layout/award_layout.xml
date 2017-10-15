@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/middle"
+    android:clipChildren="false">
+
+    <RelativeLayout
+        android:id="@+id/award_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/top"
+        android:elevation="5dp">
+
+        <TextView
+            android:id="@+id/award_secondary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Achievements"
+            android:textAllCaps="true"
+            android:textColor="#be7061"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="award_secondary_text" />
+
+        <TextView
+            android:id="@+id/award_primary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Achievements"
+            android:textAllCaps="true"
+            android:textColor="#febd92"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:transitionName="award_primary_text"
+            android:translationX="2.5dp" />
+
+        <ImageView
+            android:id="@+id/award_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingEnd="16dp"
+            android:paddingStart="16dp"
+            android:src="@drawable/back_icon" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/award_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/award_toolbar">
+
+        <LinearLayout
+            android:id="@+id/award_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:elevation="4dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/nmsc_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_certificate" />
+
+                <TextView
+                    android:id="@+id/nmsc_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/nmsc_icon"
+                    android:paddingTop="20dp"
+                    android:text="National Merit Scholarship Semifinalist"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/nmsc_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/nmsc_primary"
+                    android:layout_below="@id/nmsc_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="20dp"
+                    android:text="The National Merit Scholarship program is a United States academic scholarship competition for recognition and university scholarships administered by the National Merit Scholarship Corporation. Semifinalists are named on the basis of a nationally applied Selection Index score derived from performance on the PSAT/NMSQT®. Semifinalists are the highest-scoring program entrants in each state and represent the top 0.5% percent of the state’s senior students.\n\nLevel: National\nReceived: 12th Grade"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/nmsc_secondary"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginStart="80dp"
+                    android:background="#8a000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/aps_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_certificate" />
+
+                <TextView
+                    android:id="@+id/aps_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/aps_icon"
+                    android:paddingTop="20dp"
+                    android:text="AP Scholar with Distinction"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/aps_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/aps_primary"
+                    android:layout_below="@id/aps_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="20dp"
+                    android:text="Awarded by the College Board AP Program to recognize students who demonstrate outstanding college-level achievement through performance on AP Exams, this award is granted to those who receive an average score of at least 3.5 on all AP Exams taken, and scores of 3 or higher on five or more of these exams.\n\nLevel: National\nReceived: 11th Grade"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/aps_secondary"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginStart="80dp"
+                    android:background="#8a000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/nfhs_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_certificate" />
+
+                <TextView
+                    android:id="@+id/nfhs_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/nfhs_icon"
+                    android:paddingTop="20dp"
+                    android:text="National French Honor Society"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/nfhs_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/nfhs_primary"
+                    android:layout_below="@id/nfhs_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="20dp"
+                    android:text="The National French Honor Society is an organization that aims to recognize high school students who have maintained excellent grades in at least three semesters of French Language courses.\n\nLevel: National\nInducted: 11th Grade"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/nfhs_secondary"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginStart="80dp"
+                    android:background="#8a000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/ghp_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_certificate" />
+
+                <TextView
+                    android:id="@+id/ghp_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/ghp_icon"
+                    android:paddingTop="20dp"
+                    android:text="Governor's Honor Program Nominee (French)"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/ghp_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/ghp_primary"
+                    android:layout_below="@id/ghp_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="20dp"
+                    android:text="The Georgia Governor’s Honors Program (GHP) is a residential summer program for gifted and talented high school students who will be rising juniors and seniors during the program.\n\nLevel: State\nNominated: 10th Grade"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#c5ae91"
+                    android:layout_below="@id/ghp_secondary"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
