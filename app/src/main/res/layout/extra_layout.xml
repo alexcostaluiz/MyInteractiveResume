@@ -142,7 +142,7 @@
                     android:layout_below="@id/tennis_primary"
                     android:layout_marginEnd="8dp"
                     android:paddingBottom="8dp"
-                    android:text="The National Merit Scholarship program is a United States academic scholarship competition for recognition and university scholarships administered by the National Merit Scholarship Corporation. Semifinalists are named on the basis of a nationally applied Selection Index score derived from performance on the PSAT/NMSQT®. Semifinalists are the highest-scoring program entrants in each state and represent the top 0.5% percent of the state’s senior students.\n\nLevel: National\nReceived: 12th Grade"
+                    android:text="Tennis has been a part of me for my whole life. Starting at age six and still playing now, I have devoted countless hours into tennis. Independently, I have participated in and won many USTA tournaments. During my high school career, I have been on the Varsity tennis team since freshman year, and have been a starter since sophomore year. Our team consistently places top in the Regional Championship and, last season, finished as finalists in the State Championship.\n\nParticipated: 9th, 10th, 11th, 12th\nHours per week: 8-12"
                     android:textSize="12sp" />
             </RelativeLayout>
 
@@ -195,7 +195,7 @@
                     android:layout_below="@id/programming_primary"
                     android:layout_marginEnd="8dp"
                     android:paddingBottom="8dp"
-                    android:text="The National Merit Scholarship program is a United States academic scholarship competition for recognition and university scholarships administered by the National Merit Scholarship Corporation. Semifinalists are named on the basis of a nationally applied Selection Index score derived from performance on the PSAT/NMSQT®. Semifinalists are the highest-scoring program entrants in each state and represent the top 0.5% percent of the state’s senior students.\n\nLevel: National\nReceived: 12th Grade"
+                    android:text="Since freshman year, computer programming has played a very significant role in my life. Discovering programming learning to mod a video game, it quickly became a passion of mine. Ever since then, I have always been pursuing computer programming in some way or another, moving from one form to another as my interests change. Recently, my ambitions have shifted to computer learning and artificial intelligence, and I hope to one day enter this field of study.\n\nParticipated: 9th, 10th, 11th, 12th\nHours per week: 5-12"
                     android:textSize="12sp" />
             </RelativeLayout>
 
@@ -248,7 +248,7 @@
                     android:layout_below="@id/chess_primary"
                     android:layout_marginEnd="8dp"
                     android:paddingBottom="20dp"
-                    android:text="The National Merit Scholarship program is a United States academic scholarship competition for recognition and university scholarships administered by the National Merit Scholarship Corporation. Semifinalists are named on the basis of a nationally applied Selection Index score derived from performance on the PSAT/NMSQT®. Semifinalists are the highest-scoring program entrants in each state and represent the top 0.5% percent of the state’s senior students.\n\nLevel: National\nReceived: 12th Grade"
+                    android:text="Being taught by my dad at an early age, I have always enjoyed chess, even participating in a chess club in elementary school. I joined Chattahoochee's chess club my junior year and have always enjoyed it. The club permits both casual and competitive play, and every year a certain number of members are sent to a regional tournament where they represent the school.\n\nParticipated: 11th, 12th\nHours per week: 2-4\nLeadership position: Officer (12th Grade)"
                     android:textSize="12sp" />
 
                 <View
@@ -297,7 +297,7 @@
                     android:layout_below="@id/codes_primary"
                     android:layout_marginEnd="8dp"
                     android:paddingBottom="20dp"
-                    android:text="The National Merit Scholarship program is a United States academic scholarship competition for recognition and university scholarships administered by the National Merit Scholarship Corporation. Semifinalists are named on the basis of a nationally applied Selection Index score derived from performance on the PSAT/NMSQT®. Semifinalists are the highest-scoring program entrants in each state and represent the top 0.5% percent of the state’s senior students.\n\nLevel: National\nReceived: 12th Grade"
+                    android:text="Hooch Codes is a new club at Chattahoochee, being organized my senior year. Naturally, i was quick to join given my passion for coding. The club is positive space for like-minded students to come together and complete projects or help one another with preexisting projects.\n\nParticipated: 12th\nHours per week: 2-4"
                     android:textSize="12sp" />
 
                 <View
