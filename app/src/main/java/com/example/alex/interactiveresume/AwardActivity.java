@@ -51,6 +51,7 @@ public class AwardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.award_layout);
 
+        //yes
         toolbar = (RelativeLayout) findViewById(R.id.award_toolbar);
         awardContainer = (LinearLayout) findViewById(R.id.award_container);
         scroller = (ScrollView) findViewById(R.id.award_scrollview);
