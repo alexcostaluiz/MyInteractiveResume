@@ -7,4 +7,5 @@ This is a personal interactive resume android application.
 ## Meta
 
 Alex Costa - alexcostaluiz@outlook.com
-Distributed under the MIT License. See [LICENSE](https://github.com/alexcostaluiz/MyInteractiveResume) for more information.
+
+Distributed under the MIT License. See [LICENSE](https://github.com/alexcostaluiz/MyInteractiveResume/blob/master/LICENSE) for more information.
