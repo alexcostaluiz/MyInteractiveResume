@@ -46,54 +46,65 @@
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/job_container"
+    <ScrollView
+        android:id="@+id/job_scrollview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:layout_below="@id/job_toolbar"
-        android:background="@color/top"
-        android:elevation="4dp"
-        android:orientation="vertical">
-
-        <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_below="@id/job_toolbar">
+        <LinearLayout
+            android:id="@+id/job_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp">
+            android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/fsbr_icon"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginStart="8dp"
-                android:src="@drawable/ic_handshake" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"/>
 
-            <TextView
-                android:id="@+id/fsbr_primary"
-                android:layout_width="wrap_content"
+            <RelativeLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_toEndOf="@id/fsbr_icon"
-                android:paddingTop="20dp"
-                android:text="Five Seasons Brewery and Restaurant"
-                android:textColor="#EE505050"
-                android:textSize="14sp"
-                android:textStyle="bold|italic" />
-
-            <TextView
-                android:id="@+id/fsbr_secondary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignStart="@id/fsbr_primary"
-                android:layout_below="@id/fsbr_primary"
                 android:layout_marginEnd="8dp"
-                android:text="Title: Dishwasher/Prep Chef\nResponsibilities:\n    • Dishwashing\n    • Preparing foods before or after they were cooked\n      (e.g. chopping vegetables, cutting/grinding meat,\n      washing and preparing foods, storing foods)\n    • Preparing appetizers and desserts on the line\nExperience:\n      My time working at Five Seasons over the summer after junior year was extremely enriching. blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah "
-                android:textSize="12sp" />
-        </RelativeLayout>
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="8dp"
-            android:background="#c5ae91"/>
-    </LinearLayout>
+                android:elevation="4dp"
+                android:background="@color/top">
+
+                <ImageView
+                    android:id="@+id/fsbr_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_handshake" />
+
+                <TextView
+                    android:id="@+id/fsbr_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/fsbr_icon"
+                    android:paddingTop="20dp"
+                    android:text="Five Seasons Brewery and Restaurant"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/fsbr_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/fsbr_primary"
+                    android:layout_below="@id/fsbr_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="20dp"
+                    android:text="Title: Dishwasher/Prep Chef\nResponsibilities:\n    • Dishwashing\n    • Preparing foods before or after they were cooked\n      (e.g. chopping vegetables, cutting/grinding meat,\n      washing and preparing foods, storing foods)\n    • Preparing appetizers and desserts on the line\nHours per week: 8-12\nExperience:\n      My time working at Five Seasons over the summer after junior year was extremely enriching. For the first time in my life, really, I was thrust into a place where I neither knew no one nor no one knew, or cared about, me. It was the 'real' world, and I was starting from scratch. The work was tough at first, dish washing for hours on end, burning my hands and constantly running behind. Gradually, though, I got better and soon was able to operate as a prep chef, preparing foods before being cooked, and even making appetizers and desserts on the line. I had true responsibilities to the restaurant and was held accountable to them. In this process, I met some rather wild characters in the kitchen and formed lasting relationships with my coworkers. It was an experience that gave me a different perspective than I was accustomed to and helped me find an increased respect for hard work and a greater understanding of the real world."
+                    android:textSize="12sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#c5ae91"
+                    android:layout_below="@id/fsbr_secondary"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
