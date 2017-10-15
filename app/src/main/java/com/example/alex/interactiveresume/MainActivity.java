@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewConfiguration;
+import android.view.animation.DecelerateInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -31,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             interactiveY, resumeY, indicatorY, tileRootY, tileRootFinalY;
     boolean setInitialY = false;
     float completeY, completeY2;
-    float completePercent = 950f/1280f, completePercent2 = 234f/1280f;
+    float completePercent = 950f / 1280f, completePercent2 = 234f / 1280f;
 
     int touchSlop;
     ViewConfiguration vc;
@@ -45,8 +46,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         SCREEN_HEIGHT = getResources().getDisplayMetrics().heightPixels;
-        completeY = SCREEN_HEIGHT*completePercent;
-        completeY2 = SCREEN_HEIGHT*completePercent2;
+        completeY = SCREEN_HEIGHT * completePercent;
+        completeY2 = SCREEN_HEIGHT * completePercent2;
 
         extra = (RelativeLayout) findViewById(R.id.extra_tile);
         award = (RelativeLayout) findViewById(R.id.award_tile);
@@ -80,5 +81,28 @@ public class MainActivity extends AppCompatActivity {
         job.setOnTouchListener(new TileTouchListener(MainActivity.this));
         academia.setOnTouchListener(new TileTouchListener(MainActivity.this));
         pdf.setOnTouchListener(new TileTouchListener(MainActivity.this));
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (scrolled) {
+            scrolled = false;
+            headshot.animate().y(headshotY).setDuration(250).setStartDelay(0).setInterpolator(new DecelerateInterpolator()).start();
+            headshot2.animate().y(headshot2Y).setDuration(250).setStartDelay(0).setInterpolator(new DecelerateInterpolator()).start();
+            bottom.animate().y(bottomY).setDuration(325).setInterpolator(new DecelerateInterpolator()).start();
+            middle.animate().y(middleY).setDuration(380).setInterpolator(new DecelerateInterpolator()).start();
+            top.animate().y(topY).setDuration(250).setInterpolator(new DecelerateInterpolator()).start();
+            nameContainer.animate().y(nameContainerY).setDuration(250).setInterpolator(new DecelerateInterpolator()).start();
+            an.animate().y(anY).setDuration(250).setInterpolator(new DecelerateInterpolator()).start();
+            interactive.animate().y(interactiveY).setDuration(250).setInterpolator(new DecelerateInterpolator()).start();
+            resume.animate().y(resumeY).setDuration(250).setInterpolator(new DecelerateInterpolator()).start();
+            more.animate().y(moreY).setDuration(250).setInterpolator(new DecelerateInterpolator()).start();
+            more.animate().rotation(360f).setDuration(150).setInterpolator(new DecelerateInterpolator()).start();
+            tileRoot.animate().y(tileRootY).setDuration(250).setInterpolator(new DecelerateInterpolator()).start();
+            moreIndicator.animate().y(indicatorY).setDuration(250).setInterpolator(new DecelerateInterpolator()).start();
+        }
+        else {
+            super.onBackPressed();
+        }
     }
 }
