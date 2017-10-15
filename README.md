@@ -6,6 +6,10 @@
 
 ## Meta
 
-Alex Costa - [@alexcostaluiz](https://twitter.com/alexcostaluiz) - alexcostaluiz@outlook.com
+Alex Costa 
+
+Twitter: [@alexcostaluiz](https://twitter.com/alexcostaluiz) 
+
+Email: alexcostaluiz@outlook.com
 
 Distributed under the MIT License. See [LICENSE](https://github.com/alexcostaluiz/MyInteractiveResume/blob/master/LICENSE) for more information.
