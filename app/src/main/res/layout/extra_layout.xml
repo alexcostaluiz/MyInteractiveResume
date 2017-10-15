@@ -76,4 +76,242 @@
             android:src="@drawable/back_icon" />
 
     </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/extra_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/extra_toolbar">
+
+        <LinearLayout
+            android:id="@+id/extra_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/extra_sports_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sports"
+                    android:textColor="@color/middle"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/tennis_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_championship" />
+
+                <TextView
+                    android:id="@+id/tennis_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/tennis_icon"
+                    android:layout_below="@id/extra_sports_label"
+                    android:paddingTop="4dp"
+                    android:text="Tennis"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/tennis_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/tennis_primary"
+                    android:layout_below="@id/tennis_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="The National Merit Scholarship program is a United States academic scholarship competition for recognition and university scholarships administered by the National Merit Scholarship Corporation. Semifinalists are named on the basis of a nationally applied Selection Index score derived from performance on the PSAT/NMSQT®. Semifinalists are the highest-scoring program entrants in each state and represent the top 0.5% percent of the state’s senior students.\n\nLevel: National\nReceived: 12th Grade"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/extra_interest_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Academic Interest"
+                    android:textColor="@color/middle"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/programming_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_certificate" />
+
+                <TextView
+                    android:id="@+id/programming_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/programming_icon"
+                    android:layout_below="@id/extra_interest_label"
+                    android:paddingTop="4dp"
+                    android:text="Computer Programming"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/programming_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/programming_primary"
+                    android:layout_below="@id/programming_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="The National Merit Scholarship program is a United States academic scholarship competition for recognition and university scholarships administered by the National Merit Scholarship Corporation. Semifinalists are named on the basis of a nationally applied Selection Index score derived from performance on the PSAT/NMSQT®. Semifinalists are the highest-scoring program entrants in each state and represent the top 0.5% percent of the state’s senior students.\n\nLevel: National\nReceived: 12th Grade"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/extra_clubs_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clubs"
+                    android:textColor="@color/middle"
+                    android:textStyle="bold"
+                    android:textSize="12sp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"/>
+
+                <ImageView
+                    android:id="@+id/chess_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_certificate" />
+
+                <TextView
+                    android:id="@+id/chess_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_below="@id/extra_clubs_label"
+                    android:layout_toEndOf="@id/chess_icon"
+                    android:paddingTop="4dp"
+                    android:text="Chess Club"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/chess_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/chess_primary"
+                    android:layout_below="@id/chess_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="20dp"
+                    android:text="The National Merit Scholarship program is a United States academic scholarship competition for recognition and university scholarships administered by the National Merit Scholarship Corporation. Semifinalists are named on the basis of a nationally applied Selection Index score derived from performance on the PSAT/NMSQT®. Semifinalists are the highest-scoring program entrants in each state and represent the top 0.5% percent of the state’s senior students.\n\nLevel: National\nReceived: 12th Grade"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/chess_secondary"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginStart="80dp"
+                    android:background="#8a000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/codes_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_certificate" />
+
+                <TextView
+                    android:id="@+id/codes_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/codes_icon"
+                    android:paddingTop="20dp"
+                    android:text="Hooch Codes Club"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/codes_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/codes_primary"
+                    android:layout_below="@id/codes_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="20dp"
+                    android:text="The National Merit Scholarship program is a United States academic scholarship competition for recognition and university scholarships administered by the National Merit Scholarship Corporation. Semifinalists are named on the basis of a nationally applied Selection Index score derived from performance on the PSAT/NMSQT®. Semifinalists are the highest-scoring program entrants in each state and represent the top 0.5% percent of the state’s senior students.\n\nLevel: National\nReceived: 12th Grade"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:background="#c5ae91"
+                    android:layout_below="@id/codes_secondary"/>
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

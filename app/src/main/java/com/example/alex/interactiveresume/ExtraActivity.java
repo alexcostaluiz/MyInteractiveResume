@@ -8,11 +8,13 @@ import android.view.ViewAnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 
 public class ExtraActivity extends AppCompatActivity {
 
     RelativeLayout toolbar;
     ImageView back;
+    ScrollView scroller;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,8 @@ public class ExtraActivity extends AppCompatActivity {
         setContentView(R.layout.extra_layout);
 
         toolbar = (RelativeLayout) findViewById(R.id.extra_toolbar);
+        scroller = (ScrollView) findViewById(R.id.extra_scrollview);
+        scroller.setY(MainActivity.SCREEN_HEIGHT-50);
         back = (ImageView) findViewById(R.id.extra_back);
 
         back.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +48,15 @@ public class ExtraActivity extends AppCompatActivity {
                 revealToolbar.setDuration(500);
                 revealToolbar.setInterpolator(new DecelerateInterpolator());
                 revealToolbar.start();
+            }
+        });
+
+        scroller.addOnLayoutChangeListener(new View.OnLayoutChangeListener() {
+            @Override
+            public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
+                v.removeOnLayoutChangeListener(this);
+                float y = toolbar.getY() + toolbar.getHeight();
+                scroller.animate().y(y).setDuration(300).setStartDelay(100).setInterpolator(new DecelerateInterpolator()).start();
             }
         });
     }
