@@ -172,7 +172,7 @@
                     android:layout_height="24dp"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_certificate" />
+                    android:src="@drawable/ic_computer" />
 
                 <TextView
                     android:id="@+id/programming_primary"
@@ -225,7 +225,7 @@
                     android:layout_height="24dp"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_certificate" />
+                    android:src="@drawable/ic_knight" />
 
                 <TextView
                     android:id="@+id/chess_primary"
@@ -275,7 +275,7 @@
                     android:layout_height="24dp"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="8dp"
-                    android:src="@drawable/ic_certificate" />
+                    android:src="@drawable/ic_programming" />
 
                 <TextView
                     android:id="@+id/codes_primary"

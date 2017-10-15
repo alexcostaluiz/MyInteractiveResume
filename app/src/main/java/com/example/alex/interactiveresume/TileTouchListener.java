@@ -1,14 +1,20 @@
 package com.example.alex.interactiveresume;
 
 import android.app.ActivityOptions;
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
+import android.os.Environment;
+import android.util.Log;
 import android.util.Pair;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
+
+import java.io.File;
 
 class TileTouchListener implements RelativeLayout.OnTouchListener {
 
@@ -100,7 +106,19 @@ class TileTouchListener implements RelativeLayout.OnTouchListener {
                             main.startActivity(academiaIntent, academiaOptions.toBundle());
                             break;
                         case R.id.pdf :
-                            Toast.makeText(main, "Not yet implemented!", Toast.LENGTH_SHORT).show();
+                            if(MainActivity.verifyStoragePermissions(main)) {
+                                String path = Environment.getExternalStorageDirectory().getAbsolutePath() + "/resume.pdf";
+                                File pdf = new File(path);
+                                Intent intent = new Intent(Intent.ACTION_VIEW);
+                                intent.setDataAndType(Uri.fromFile(pdf), "application/pdf");
+                                Intent chooser = Intent.createChooser(intent, "Open File");
+                                try {
+                                    main.startActivity(chooser);
+                                }
+                                catch (ActivityNotFoundException e) {
+                                    Toast.makeText(main, "No PDF reader applications installed", Toast.LENGTH_SHORT).show();
+                                }
+                            }
                             break;
                     }
                 }

@@ -505,42 +505,46 @@
             android:id="@+id/pdf"
             android:layout_width="250dp"
             android:layout_height="50dp"
-            android:layout_below="@id/academia"
-            android:layout_alignStart="@id/academia"
             android:layout_alignEnd="@id/pdf_reference"
+            android:layout_alignStart="@id/academia"
+            android:layout_below="@id/academia"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="28dp"
             android:background="@color/middle"
             android:elevation="4dp">
 
-            <TextView
-                android:id="@+id/pdf_secondary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:elevation="20dp"
-                android:maxLines="1"
-                android:text="View PDF Version"
-                android:textAllCaps="true"
-                android:textColor="#be7061"
-                android:textSize="20sp"
-                android:textStyle="bold"
-                android:translationX="-2.5dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
 
-            <TextView
-                android:id="@+id/pdf_primary"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="10dp"
-                android:elevation="20dp"
-                android:maxLines="1"
-                android:text="View PDF Version"
-                android:textAllCaps="true"
-                android:textColor="#febd92"
-                android:textSize="20sp"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/pdf_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:elevation="20dp"
+                    android:maxLines="1"
+                    android:text="View PDF Version"
+                    android:textAllCaps="true"
+                    android:textColor="#be7061"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:translationX="-1.5dp" />
+
+                <TextView
+                    android:id="@+id/pdf_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:elevation="20dp"
+                    android:maxLines="1"
+                    android:text="View PDF Version"
+                    android:textAllCaps="true"
+                    android:textColor="#febd92"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:translationX="1.0dp"/>
+            </RelativeLayout>
 
             <View
                 android:layout_width="match_parent"
