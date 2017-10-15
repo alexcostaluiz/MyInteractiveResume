@@ -2,7 +2,7 @@
 > This is a personal interactive resume android application.
 
 ## Screenshots
-![](small2.png) ![](small3.png) ![](resume_resize.gif)
+![](resume_resize.gif) ![](small2.png) ![](small3.png)
 
 ## Meta
 
