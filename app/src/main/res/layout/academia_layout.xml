@@ -45,4 +45,241 @@
             android:src="@drawable/back_icon" />
 
     </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/academia_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/academia_toolbar">
+
+        <LinearLayout
+            android:id="@+id/academia_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/academia_school_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="High School"
+                    android:textColor="@color/middle"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/school_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_university" />
+
+                <TextView
+                    android:id="@+id/school_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/academia_school_label"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/school_icon"
+                    android:paddingTop="4dp"
+                    android:text="Chattahoochee High School"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/school_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/school_primary"
+                    android:layout_below="@id/school_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="5230 Taylor Road\nJohns Creek, GA 30022-6015 US\n\nGrade Level: 12th Grade\nClass Size: 477\nGPA Type: Weighted\nGPA Scale: 100\nCumulative GPA: 96.452"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/academia_course_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Course Work"
+                    android:textColor="@color/middle"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/course_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_books" />
+
+                <TextView
+                    android:id="@+id/course_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/academia_course_label"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/course_icon"
+                    android:paddingTop="4dp"
+                    android:text="Senior Year Coursework"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/course_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/course_primary"
+                    android:layout_below="@id/course_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="8dp"
+                    android:text="AP Psychology\nSociology\nEconomics\nAP Biology\nAP Statistics\nComputer Programming - Independent Study\nAP Literature and Composition"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <TextView
+                    android:id="@+id/academia_test_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:text="Test Scores"
+                    android:textColor="@color/middle"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/test_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_exam" />
+
+                <TextView
+                    android:id="@+id/test_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/academia_test_label"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/test_icon"
+                    android:paddingTop="4dp"
+                    android:text="ACT Score"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/test_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/test_primary"
+                    android:layout_below="@id/test_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="20dp"
+                    android:text="Test Date: 09/2017\n\nComposite Score: 35\nEnglish: 35\nMath: 34\nReading: 35\nScience: 34\nWriting: 8"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/test_secondary"
+                    android:layout_marginEnd="80dp"
+                    android:layout_marginStart="80dp"
+                    android:background="#8a000000" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@color/top"
+                android:clipChildren="false"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/ap_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/ic_exam" />
+
+                <TextView
+                    android:id="@+id/ap_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_toEndOf="@id/ap_icon"
+                    android:paddingTop="20dp"
+                    android:text="AP Scores"
+                    android:textColor="#EE505050"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
+
+                <TextView
+                    android:id="@+id/ap_secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@id/ap_primary"
+                    android:layout_below="@id/ap_primary"
+                    android:layout_marginEnd="8dp"
+                    android:paddingBottom="20dp"
+                    android:text="Calculus BC\nScore: 4\nChemistry\nScore: 3\nLanguage and Composition\nScore: 4\nWorld History\nScore: 4\nComparative Government and Politics\nScore: 5\nUnited States Government and Politics\nScore: 3"
+                    android:textSize="12sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="8dp"
+                    android:layout_below="@id/ap_secondary"
+                    android:background="#c5ae91" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp" />
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>
