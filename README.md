@@ -2,7 +2,7 @@
 > This is a personal interactive resume android application.
 
 ## Screenshots
-![](header.png)
+![](screenshot2.png) ![](screenshot3.png) ![](resume_gif.gif)
 
 ## Meta
 
