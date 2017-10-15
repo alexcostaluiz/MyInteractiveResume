@@ -55,7 +55,7 @@ public class JobActivity extends AppCompatActivity {
             @Override
             public void onLayoutChange(View v, int left, int top, int right, int bottom, int oldLeft, int oldTop, int oldRight, int oldBottom) {
                 v.removeOnLayoutChangeListener(this);
-                float y = toolbar.getY() + toolbar.getHeight() + getResources().getDimension(R.dimen.margin);
+                float y = toolbar.getY() + toolbar.getHeight();
                 scroller.animate().y(y).setDuration(300).setStartDelay(100).setInterpolator(new DecelerateInterpolator()).start();
             }
         });
