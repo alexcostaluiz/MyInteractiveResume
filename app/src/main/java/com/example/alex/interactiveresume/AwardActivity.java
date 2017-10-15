@@ -21,37 +21,13 @@ public class AwardActivity extends AppCompatActivity {
     LinearLayout awardContainer;
     ScrollView scroller;
     ImageView back;
-    float lastY, containerY, containerY2;
-    boolean initialSet = false;
     boolean activityLoaded = false;
-
-    float multiplier(float y, float initialY, float finalY) {
-        if(y < initialY) {
-            return 0.4f;
-        }
-        float m = (0.3f-0.5f)/(finalY-initialY);
-        float b = 0.5f - (m*initialY);
-        return (m*y)+b;
-    }
-
-    float multiplier2(float y, float initialY, float finalY) {
-        if(y > initialY) {
-            return 1f;
-        }
-        float dy = initialY - finalY;
-        float multi = (y - finalY)/dy;
-        if(multi > 0.1f) {
-            return multi;
-        }
-        else return 0.1f;
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.award_layout);
 
-        //yes
         toolbar = (RelativeLayout) findViewById(R.id.award_toolbar);
         awardContainer = (LinearLayout) findViewById(R.id.award_container);
         scroller = (ScrollView) findViewById(R.id.award_scrollview);
@@ -65,51 +41,6 @@ public class AwardActivity extends AppCompatActivity {
                 overridePendingTransition(0, R.anim.slide_out_end);
             }
         });
-
-        /*awardContainer.setOnTouchListener(new View.OnTouchListener() {
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                if(activityLoaded) {
-                    int action = event.getAction();
-                    switch (action) {
-                        case MotionEvent.ACTION_DOWN :
-                            if(v.getAnimation() != null) {
-                                v.getAnimation().cancel();
-                            }
-                            if(!initialSet) {
-                                initialSet = true;
-                                containerY = v.getY();
-                                containerY2 = ((MainActivity.SCREEN_HEIGHT-containerY)*0.4f)+containerY;
-                            }
-                            lastY = event.getRawY();
-                            break;
-                        case MotionEvent.ACTION_MOVE :
-                            float y = event.getRawY();
-                            float dy = y - lastY;
-                            if(dy > 0) {
-                                v.setY(v.getY() + (dy*multiplier(v.getY(), containerY, containerY2)));
-                            }
-                            else {
-                                v.setY(v.getY() + (dy*0.4f));
-                            }
-                            lastY = y;
-                            break;
-                        case MotionEvent.ACTION_UP :
-                            if(v.getY() != containerY) {
-                                v.animate().y(containerY).setDuration(500).setInterpolator(new DecelerateInterpolator(2)).start();
-                            }
-                            break;
-                        case MotionEvent.ACTION_CANCEL :
-                            if(v.getY() != containerY) {
-                                v.animate().y(containerY).setDuration(500).setInterpolator(new DecelerateInterpolator(2)).start();
-                            }
-                            break;
-                    }
-                    return true;
-                }
-                else return false;
-            }
-        });*/
     }
 
     @Override
