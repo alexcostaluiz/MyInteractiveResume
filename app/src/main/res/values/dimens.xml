@@ -2,5 +2,6 @@
 <resources>
     <dimen name="tile_elevation">4dp</dimen>
     <dimen name="tile_final_elevation">16dp</dimen>
+    <dimen name="pdf_final_elevation">8dp</dimen>
     <dimen name="margin">8dp</dimen>
 </resources>

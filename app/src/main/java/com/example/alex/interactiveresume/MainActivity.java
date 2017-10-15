@@ -14,7 +14,7 @@ public class MainActivity extends AppCompatActivity {
 
     RelativeLayout tileRoot;
     CustomRoot root;
-    RelativeLayout extra, award, job, academia;
+    RelativeLayout extra, award, job, academia, pdf;
     ImageView more, headshot, headshot2;
     boolean scrollInAction = false;
     boolean scrolled = false;
@@ -52,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
         award = (RelativeLayout) findViewById(R.id.award_tile);
         job = (RelativeLayout) findViewById(R.id.job_tile);
         academia = (RelativeLayout) findViewById(R.id.academia_tile);
+        pdf = (RelativeLayout) findViewById(R.id.pdf);
 
         moreIndicator = findViewById(R.id.more_indicator);
         more = (ImageView) findViewById(R.id.more_arrow);
@@ -78,5 +79,6 @@ public class MainActivity extends AppCompatActivity {
         award.setOnTouchListener(new TileTouchListener(MainActivity.this));
         job.setOnTouchListener(new TileTouchListener(MainActivity.this));
         academia.setOnTouchListener(new TileTouchListener(MainActivity.this));
+        pdf.setOnTouchListener(new TileTouchListener(MainActivity.this));
     }
 }

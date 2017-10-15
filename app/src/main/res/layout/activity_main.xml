@@ -177,17 +177,29 @@
     <RelativeLayout
         android:id="@+id/tile_root"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:padding="16dp"
+        android:paddingBottom="8dp"
         android:paddingEnd="16dp"
-        android:paddingStart="28dp">
+        android:paddingStart="28dp"
+        android:paddingTop="96dp">
+
+        <TextView
+            android:id="@+id/tile_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="M  Y     R  E  S  U  M  E"
+            android:textSize="15sp"
+            android:textStyle="bold" />
 
         <RelativeLayout
             android:id="@+id/extra"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/tile_title"
+            android:layout_marginTop="28dp"
             android:clipChildren="false">
 
             <RelativeLayout
@@ -227,8 +239,8 @@
                 android:textColor="#be7061"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:translationX="-10dp"
-                android:transitionName="extra_secondary_text"/>
+                android:transitionName="extra_secondary_text"
+                android:translationX="-10dp" />
 
             <TextView
                 android:id="@+id/extra_primary"
@@ -243,8 +255,8 @@
                 android:textColor="#febd92"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:translationX="-7.5dp"
-                android:transitionName="extra_primary_text"/>
+                android:transitionName="extra_primary_text"
+                android:translationX="-7.5dp" />
 
             <TextView
                 android:id="@+id/extra_secondary2"
@@ -259,8 +271,8 @@
                 android:textColor="#be7061"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:translationX="-18dp"
-                android:transitionName="extra_quaternary_text"/>
+                android:transitionName="extra_quaternary_text"
+                android:translationX="-18dp" />
 
             <TextView
                 android:id="@+id/extra_secondary"
@@ -275,8 +287,8 @@
                 android:textColor="#febd92"
                 android:textSize="20sp"
                 android:textStyle="bold"
-                android:translationX="-15.5dp"
-                android:transitionName="extra_tertiary_text"/>
+                android:transitionName="extra_tertiary_text"
+                android:translationX="-15.5dp" />
 
         </RelativeLayout>
 
@@ -346,6 +358,13 @@
                 android:translationX="6.5dp" />
 
         </RelativeLayout>
+
+        <View
+            android:id="@+id/pdf_reference"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignStart="@id/award"
+            android:layout_alignTop="@id/extra" />
 
         <RelativeLayout
             android:id="@+id/job"
@@ -481,6 +500,65 @@
                 android:translationX="-30.5dp" />
 
         </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pdf"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/academia"
+            android:layout_alignStart="@id/academia"
+            android:layout_alignEnd="@id/pdf_reference"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:background="@color/middle"
+            android:elevation="4dp">
+
+            <TextView
+                android:id="@+id/pdf_secondary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="View PDF Version"
+                android:textAllCaps="true"
+                android:textColor="#be7061"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:translationX="-2.5dp" />
+
+            <TextView
+                android:id="@+id/pdf_primary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:elevation="20dp"
+                android:maxLines="1"
+                android:text="View PDF Version"
+                android:textAllCaps="true"
+                android:textColor="#febd92"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_alignParentBottom="true"
+                android:background="#50000000" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Copyright © 2017 Alex Costa\nLicensed under MIT license"
+            android:textAlignment="center"
+            android:textSize="10sp"
+            android:textStyle="italic" />
+
     </RelativeLayout>
 
 </com.example.alex.interactiveresume.CustomRoot>

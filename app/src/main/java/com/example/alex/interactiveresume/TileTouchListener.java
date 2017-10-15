@@ -3,19 +3,19 @@ package com.example.alex.interactiveresume;
 import android.app.ActivityOptions;
 import android.content.Context;
 import android.content.Intent;
-import android.util.Log;
 import android.util.Pair;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
 class TileTouchListener implements RelativeLayout.OnTouchListener {
 
     private MainActivity main;
     private float initialZ;
     private float finalZ;
-    boolean outOfBounds = false;
+    private boolean outOfBounds = false;
 
     TileTouchListener(Context context) {
         this.main = (MainActivity) context;
@@ -26,7 +26,15 @@ class TileTouchListener implements RelativeLayout.OnTouchListener {
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         int action = event.getAction();
-        RelativeLayout parent = (RelativeLayout) v.getParent();
+        RelativeLayout parent;
+        if(v.getId() != R.id.pdf) {
+            parent = (RelativeLayout) v.getParent();
+            finalZ = main.getResources().getDimension(R.dimen.tile_final_elevation);
+        }
+        else {
+            parent = (RelativeLayout) v;
+            finalZ = main.getResources().getDimension(R.dimen.pdf_final_elevation);
+        }
         switch (action) {
             case MotionEvent.ACTION_DOWN : {
                 outOfBounds = false;
@@ -90,6 +98,9 @@ class TileTouchListener implements RelativeLayout.OnTouchListener {
                             ActivityOptions academiaOptions = ActivityOptions
                                     .makeSceneTransitionAnimation(main, academiaPrimary, academiaSecondary);
                             main.startActivity(academiaIntent, academiaOptions.toBundle());
+                            break;
+                        case R.id.pdf :
+                            Toast.makeText(main, "Not yet implemented!", Toast.LENGTH_SHORT).show();
                             break;
                     }
                 }

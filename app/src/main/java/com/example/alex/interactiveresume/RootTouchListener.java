@@ -36,8 +36,7 @@ class RootTouchListener implements RelativeLayout.OnTouchListener {
                     main.anY = main.an.getY();
                     main.interactiveY = main.interactive.getY();
                     main.resumeY = main.resume.getY();
-                    main.tileRootFinalY = (MainActivity.SCREEN_HEIGHT / 2f) - (main.tileRoot.getHeight() / 2f);
-                    main.tileRoot.setY(MainActivity.SCREEN_HEIGHT + main.tileRootFinalY);
+                    main.tileRootFinalY = 0f;
                     main.tileRootY = main.tileRoot.getY();
                 }
                 main.moreIndicator.animate().scaleX(1).setDuration(150).setInterpolator(new OvershootInterpolator()).start();
