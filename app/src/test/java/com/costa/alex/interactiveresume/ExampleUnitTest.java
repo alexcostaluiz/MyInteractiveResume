@@ -1,4 +1,4 @@
-package com.example.alex.interactiveresume;
+package com.costa.alex.interactiveresume;
 
 import org.junit.Test;
 

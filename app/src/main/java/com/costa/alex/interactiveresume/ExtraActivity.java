@@ -1,4 +1,4 @@
-package com.example.alex.interactiveresume;
+package com.costa.alex.interactiveresume;
 
 import android.animation.Animator;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
 
-public class AcademiaActivity extends AppCompatActivity {
+public class ExtraActivity extends AppCompatActivity {
 
     RelativeLayout toolbar;
     ImageView back;
@@ -19,12 +19,12 @@ public class AcademiaActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.academia_layout);
+        setContentView(R.layout.extra_layout);
 
-        toolbar = (RelativeLayout) findViewById(R.id.academia_toolbar);
-        back = (ImageView) findViewById(R.id.academia_back);
-        scroller = (ScrollView) findViewById(R.id.academia_scrollview);
+        toolbar = (RelativeLayout) findViewById(R.id.extra_toolbar);
+        scroller = (ScrollView) findViewById(R.id.extra_scrollview);
         scroller.setY(MainActivity.SCREEN_HEIGHT-50);
+        back = (ImageView) findViewById(R.id.extra_back);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override

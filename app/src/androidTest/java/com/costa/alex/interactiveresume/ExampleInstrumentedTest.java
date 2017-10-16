@@ -1,4 +1,4 @@
-package com.example.alex.interactiveresume;
+package com.costa.alex.interactiveresume;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.alex.interactiveresume", appContext.getPackageName());
+        assertEquals("com.costa.alex.interactiveresume", appContext.getPackageName());
     }
 }

@@ -1,4 +1,4 @@
-package com.example.alex.interactiveresume;
+package com.costa.alex.interactiveresume;
 
 import android.app.ActivityOptions;
 import android.content.ActivityNotFoundException;
@@ -6,7 +6,6 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Environment;
-import android.util.Log;
 import android.util.Pair;
 import android.view.MotionEvent;
 import android.view.View;
