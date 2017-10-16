@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.example.alex.interactiveresume.CustomRoot xmlns:android="http://schemas.android.com/apk/res/android"
+<com.costa.alex.interactiveresume.CustomRoot xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#f4dec2"
     android:clipChildren="false"
-    tools:context="com.example.alex.interactiveresume.MainActivity">
+    tools:context="com.costa.alex.interactiveresume.MainActivity">
 
     <ImageView
         android:id="@+id/headshot"
@@ -565,4 +565,4 @@
 
     </RelativeLayout>
 
-</com.example.alex.interactiveresume.CustomRoot>
+</com.costa.alex.interactiveresume.CustomRoot>
