@@ -67,6 +67,8 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
         setTheme(R.style.AppTheme);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        root = (CustomRoot) findViewById(R.id.root);
+        root.setInstance(this);
 
         SCREEN_HEIGHT = getResources().getDisplayMetrics().heightPixels;
         completeY = SCREEN_HEIGHT * completePercent;
@@ -80,7 +82,6 @@ public class MainActivity extends AppCompatActivity implements ActivityCompat.On
 
         moreIndicator = findViewById(R.id.more_indicator);
         more = (ImageView) findViewById(R.id.more_arrow);
-        root = (CustomRoot) findViewById(R.id.root);
         headshot = (ImageView) findViewById(R.id.headshot);
         headshot2 = (ImageView) findViewById(R.id.headshot2);
         bottom = (LinearLayout) findViewById(R.id.bottom);

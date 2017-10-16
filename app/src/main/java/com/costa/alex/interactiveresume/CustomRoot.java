@@ -10,21 +10,24 @@ public class CustomRoot extends RelativeLayout {
 
     MainActivity main;
 
-    CustomRoot(Context context) {
+    public CustomRoot(Context context) {
         this(context, null);
     }
 
-    CustomRoot(Context context, AttributeSet attrs) {
+    public CustomRoot(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    CustomRoot(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CustomRoot(Context context, AttributeSet attrs, int defStyleAttr) {
         this(context, attrs, defStyleAttr, 0);
     }
 
-    CustomRoot(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
+    public CustomRoot(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        main = (MainActivity) context;
+    }
+
+    public void setInstance(MainActivity context) {
+        main = context;
     }
 
     @Override
