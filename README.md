@@ -6,7 +6,7 @@ I urge you to check out my current project, an Evolution Simulator build for And
 ## Play Store
 Interactive Resume is now available on the Google Play Store!
 
-It can be downloaded [here](https://play.google.com/store/apps/details?id=com.costa.alex.interactiveresume)
+It can be downloaded [here!](https://play.google.com/store/apps/details?id=com.costa.alex.interactiveresume)
 
 ## Screenshots
 ![](resume_resize.gif) ![](small2.png) ![](small3.png) ![](tile_gif.gif) ![](small4.png) ![](small5.png)
