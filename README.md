@@ -1,5 +1,7 @@
 # My Interactive Resume
-> This is a personal interactive resume android application.
+This is a personal interactive resume android application.
+
+I urge you to check out my current project, an Evolution Simulator build for Android OS, which you can find [HERE!](https://github.com/alexcostaluiz/Evolution-Simulator)
 
 ## Play Store
 Interactive Resume is now available on the Google Play Store!
